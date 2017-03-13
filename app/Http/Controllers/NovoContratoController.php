@@ -58,6 +58,5 @@ class NovoContratoController extends Controller
 		}else{
 			return redirect('/');
 		}
-
 	}
 }

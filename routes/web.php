@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/contrato', function(){
+	return redirect('/contrato/novo');
+});
+
 Route::get('/contrato/novo', 'NovoContratoController@index');
 Route::post('/contrato/novo', 'NovoContratoController@save');
 Route::get('/contrato/enviado', 'NovoContratoController@enviado');
