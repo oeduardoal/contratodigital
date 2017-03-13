@@ -9,44 +9,66 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- Icon -->
     <link rel="icon" href="http://oeduardoal.github.io/eduardoalmeida.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-    
-    <!-- Scripts -->
-    <script>
-        window.Laravel = <?php echo json_encode([
-            'csrfToken' => csrf_token(),
-        ]); ?>
-    </script>
-    <script src="/js/app.js"></script>
 </head>
-<body>
-    <div id="app">
+<body class="painelcontratodigital">
+    <div id="app" class="">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="col-sm-2 navbar-brand text-left" href="{{ url('/') }}">
-                    Website Fortaleza
+                   <a href="{{ url('/a/painel') }}">
+                   <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
+                   </a>
                 </div>
-                <div class="col-sm-8 navbar-brand text-left" href="{{ url('/') }}">
+                <div class="col-sm-7 menu-main text-left" href="{{ url('/') }}">
                     <nav>
                         <ul>
                             <li>
-                                <a href="#">KSKM</a>
+                                <a href="#">Contratos</a>
                             </li>
                             <li>
-                                <a href="#">KSKM</a>
+                                <a href="#">Contratos</a>
+                            </li>
+                             <li>
+                                <a href="#">Contratos</a>
                             </li>
                         </ul>
                     </nav>
-                </div>          
+                </div>
+                <div class="col-sm-3 .navbar-brand">
+                    <div class="btn-group" role="group" aria-label="...">
+                         <a href="#" class="btn btn-verde">
+                            NOVO CONTRATO
+                        </a >
+
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         {{Auth::user()->name}}
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
+                        
+                          <li><a href="#">Dropdown link</a></li>
+                          <li>
+                            <a href="{{ url('/logout') }}" class="text-danger" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><b>Logout</b></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>        
             </div>
         </nav>
 
         @yield('content')
+        <footer>
+            
+        </footer>
     </div>
-
+    <script src="/js/app.js"></script>
 </body>
 </html>

@@ -28,7 +28,9 @@
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="col-sm-12 navbar-brand text-center" href="{{ url('/') }}">
-                    Website Fortaleza
+                   <a href="{{ url('/contrato') }}">
+                   <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
+                   </a>
                 </div>               
             </div>
         </nav>
