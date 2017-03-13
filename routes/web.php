@@ -34,7 +34,4 @@ Route::get('refresh-csrf', function(){
 
 Auth::routes();
 
-
-Auth::routes();
-
 Route::get('/home', 'HomeController@index');
