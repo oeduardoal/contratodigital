@@ -1,6 +1,7 @@
 
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 // Variables
 @import "variables";
@@ -14,7 +15,17 @@ body{
     background-size: cover;
     background-position: top center;
 }
+body.painelcontratodigital{
+    background-image: none;
+    background-color: #FFF;
+    .navbar{
+        padding-top: 2rem;
+    }
+}
 
+.navbar{
+    border-bottom: none;
+}
 .stepwizard-step p {
     margin-top: 10px;
 }
@@ -54,13 +65,7 @@ body{
     line-height: 1.428571429;
     border-radius: 15px;
 }
-nav{
-    ul{
-        li{
-            display: inline-block;
-        }
-    }
-}
+
 
 .btn-verde{
     background-color: #6AC259;
@@ -70,4 +75,75 @@ nav{
 .btn-verde:hover{
     background-color: #6AC259;
     color: #FFF;   
+}
+.navbar-brand{
+    padding-top: .6rem;
+}
+.logo-website{
+    width:16rem;
+}
+a.btn:focus{
+    color: #FFF;
+}
+.menu-main{
+    padding-top: .7rem;
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 1rem;
+                a{
+                    font-size: 18px;
+                    color: #8A8D8F;
+                    font-weight: 600;
+                }
+                a:hover,a:focus,a:active{
+                    color: #126EA1;
+                    text-decoration: none;
+                    border-bottom: solid 3px #126EA1;
+                }
+            }
+        }
+    }
+}
+.menu{
+    padding-top: 1.1rem;
+}
+.contratos{
+    .header{
+        margin-top: 4rem;
+    }
+    .content{
+        margin-top: 2rem;
+        th{
+            color: #156A9E;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        table{
+            .btn-group,.dropdown-toggle{
+                cursor: pointer;
+                box-shadow: none;
+                border: none;
+                background-color: transparent;
+                color: #156A9E;
+                font-weight: 600;          
+            }
+            .dropdown-menu{
+                left: -100px;
+                text-align: center;
+            }
+            li.text-danger{
+                 a{
+                    color: $brand-danger;
+                    }
+            }
+        }
+    }
+    margin-top: 5rem;
+    h2{
+        font-weight: 500;
+        margin-top: 2px;
+        color: #676767;
+    }
 }
