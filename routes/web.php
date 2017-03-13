@@ -28,10 +28,6 @@ Route::get('/contrato/enviado', 'NovoContratoController@enviado');
 // Admin
 Route::get('/a/painel', 'PainelController@index');
 
-Route::get('refresh-csrf', function(){
-    return csrf_token();
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
