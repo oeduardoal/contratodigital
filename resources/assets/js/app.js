@@ -1,17 +1,20 @@
 require('./bootstrap');
+
 $(document).ready(function () {
-  var navListItems = $('div.setup-panel div a'),
-          allWells = $('.setup-content'),
-          allNextBtn = $('.nextBtn');
+
+  const navListItems = $('div.setup-panel div a');
+  const allWells = $('.setup-content');
+  const allNextBtn = $('.nextBtn');
 
   allWells.hide();
 
-  navListItems.click(function (e) {
+  navListItems.click( function(e){
       e.preventDefault();
-      var $target = $($(this).attr('href')),
-              $item = $(this);
 
-      if (!$item.hasClass('disabled')) {
+      const $target = $( $(this).attr('href') );
+      const $item = $(this);
+
+      if ( !$item.hasClass('disabled') ) {
           navListItems.removeClass('btn-primary').addClass('btn-default');
           $item.addClass('btn-primary');
           allWells.hide();
@@ -20,24 +23,27 @@ $(document).ready(function () {
       }
   });
 
-  allNextBtn.click(function(){
-      var curStep = $(this).closest(".setup-content"),
-          curStepBtn = curStep.attr("id"),
-          nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-          curInputs = curStep.find("input[type='text'],input[type='url']"),
-          isValid = true;
+  allNextBtn.click( function(){
+
+      const curStep = $(this).closest(".setup-content");
+      const curStepBtn = curStep.attr("id");
+      const nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a");
+      const curInputs = curStep.find(" input[type='text'], input[type='url'] ");
+      const isValid = true;
 
       $(".form-group").removeClass("has-error");
-      for(var i=0; i<curInputs.length; i++){
-          if (!curInputs[i].validity.valid){
+
+      for( let i = 0; i < curInputs.length; i++ ){
+          if ( !curInputs[i].validity.valid ){
               isValid = false;
               $(curInputs[i]).closest(".form-group").addClass("has-error");
           }
       }
 
-      if (isValid)
-          nextStepWizard.removeAttr('disabled').trigger('click');
+      if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+
   });
 
   $('div.setup-panel div a.btn-primary').trigger('click');
+
 });
