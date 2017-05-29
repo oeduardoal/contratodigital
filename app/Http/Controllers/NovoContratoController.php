@@ -81,7 +81,7 @@ class NovoContratoController extends Controller{
 		// Promise para enviar email
 	    Mail::send('contrato.email-contrato', $data, function($message) use ($data) {
 	        $message->to($data['inputEmail']);
-	        $message->subject('E-Mail Example');
+	        $message->subject('Solicitação de serviços');
 	    });
 
 	    // Insere os dados do cliente no banco de dados
