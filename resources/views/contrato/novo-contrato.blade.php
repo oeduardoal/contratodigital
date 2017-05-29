@@ -134,8 +134,6 @@
                         </div>
                         
                         
-                       
-                        
                             <div class="row setup-content" id="step-2">
                               <div class="col-sm-12">
                                 <br>
