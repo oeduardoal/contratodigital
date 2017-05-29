@@ -19,7 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@index');
-Route::get('/home', 'HomeController@index');
 
 // API
 Route::get('api/v1/clientes', 'ApiController@clientes');
