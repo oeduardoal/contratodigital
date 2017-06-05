@@ -34,3 +34,6 @@ Route::get('/contrato/enviado', 'NovoContratoController@enviado');
 
 // Admin
 Route::get('/a/painel', 'PainelController@index');
+Route::get('/a/painel/adicionarServicos/{id}', 'PainelController@adicionarServicos');
+Route::get('/a/painel/cancelarContrato/{id}', 'PainelController@cancelarContrato');
+

@@ -3,29 +3,28 @@
 @section('content')
 <div class="container contratos">
 		<div class="row header">
-			<div class="col-sm-6">
-				<h2>Contratos</h2>
-			</div>
-			<div class="col-sm-6">
-				<input type="text" class="form-control" placeholder="Procure um contrato por nome">
+			<div class="col-sm-12">
+				<h2>Adicionar Serviços - <b>{{ $cliente->inputRazaoSocial }}</b></h2>
 			</div>
 		</div>
 		<div class="row content">
 	        <div class="col-md-12">
 	            <table class="table table-hover">
 					<tr class="active">
-						<th>Cliente</th>
-						<th>Responsável</th>
+						<th>Serviço</th>
+						<th>Preço</th>
 						<th width="200">Solicitado em</th>
 						<th width="100"></th>
 					</tr>
 					@php
-						foreach ($clientes as $cliente):
+						foreach ($servicos as $servico):
 					@endphp
 						<tr>
-							<td>{{ $cliente->inputRazaoSocial }}</td>
-							<td>{{ $cliente->inputNome }}</td>
-							<td>{{ $cliente->created_at }}</td>
+							<td>{{ $servico->nomeServico }}</td>
+							<td>
+								<input type="text" value="{{ $servico->valorPadrao }}">
+							</td>
+							<td>{{ $servico->created_at }}</td>
 							<td>
 								<div class="btn-group" role="group">
 									<button type="button" class="span-more dropdown-toggle" data-toggle="dropdown" 
@@ -37,13 +36,8 @@
 											<a href="#">Dropdown link</a>
 										</li>
 										<li role="separator" class="divider"></li>
-										<li class="text-success">
-											<a href="/a/painel/adicionarServicos/{{ $cliente->id }}" class="text-danger">
-												<b>Adicionar Serviços</b>
-											</a>
-										</li>
 										<li class="text-danger">
-											<a href="/a/painel/cancelarContrato/{{ $cliente->id }}" class="text-danger">
+											<a href="" class="text-danger">
 												<b>Cancelar Contrato</b>
 											</a>
 										</li>
@@ -54,6 +48,13 @@
 					@php
 						endforeach;
 					@endphp
+					<tr></tr>
+					<tr>	
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><strong>Total:</strong></td>
+					</tr>
 				</table>
 	        </div>
 	    </div>
