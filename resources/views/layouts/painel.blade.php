@@ -24,41 +24,41 @@
                    <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
                    </a>
                 </div>
-                <div class="col-sm-7 menu-main text-left" href="{{ url('/') }}">
+                <div class="col-sm-6 menu-main text-left" href="{{ url('/') }}">
                     <nav>
                         <ul>
                             <li>
-                                <a href="#">Contratos</a>
+                                <a href="/a/painel/">Pendentes</a>
                             </li>
                             <li>
-                                <a href="#">Contratos</a>
+                                <a href="/a/painel/concluidos">Concluidos</a>
                             </li>
                              <li>
-                                <a href="#">Contratos</a>
+                                <a href="/a/painel/cancelados">Cancelados</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-sm-3 .navbar-brand">
+                <div class="col-sm-4 .navbar-brand">
                     <div class="btn-group" role="group" aria-label="...">
-                         <a href="#" class="btn btn-verde">
+                         <a href="/contrato/novo" class="btn btn-verde">
                             NOVO CONTRATO
-                        </a >
-
-                      <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         {{Auth::user()->name}}
-                          <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
-                        
-                          <li><a href="#">Dropdown link</a></li>
-                          <li>
-                            <a href="{{ url('/logout') }}" class="text-danger" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><b>Logout</b></a>
-                          </li>
-                        </ul>
-                      </div>
+                        </a>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             {{Auth::user()->name}}
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                              <li><a href="#">Dropdown link</a></li>
+                              <li>
+                                <a href="{{ url('/logout') }}" class="text-danger" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><b>Logout</b></a>
+                              </li>
+                            </ul>
+                          </div>
                     </div>
                 </div>        
             </div>
