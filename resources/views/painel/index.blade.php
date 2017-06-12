@@ -20,6 +20,7 @@
 						<th width="100"></th>
 					</tr>
 					@php
+<<<<<<< HEAD
 						foreach ($clientes as $cliente):
 					@endphp
 						<tr>
@@ -54,6 +55,28 @@
 					@php
 						endforeach;
 					@endphp
+=======
+						for($a = 0; $a < 3; $a++):
+
+					@endphp
+					<tr>
+						<td>asd</td>
+						<td>asd</td>
+						<td>asd</td>
+						<td><div class="btn-group" role="group">
+							<button type="button" class="span-more dropdown-toggle" data-toggle="dropdown" aria-haspopup="	true" aria-expanded="false"> Mais <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Dropdown link</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="text-danger"><a href="#" class="text-danger"><b>Excluir</b></a></li>
+							</ul>
+						</div></td>
+					</tr>
+				@php
+					endfor;
+				@endphp
+>>>>>>> master
 				</table>
 	        </div>
 	    </div>
