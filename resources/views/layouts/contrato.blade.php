@@ -29,7 +29,15 @@
             <div class="container">
                 <div class="col-sm-12 navbar-brand text-center" href="{{ url('/') }}">
                    <a href="{{ url('/contrato') }}">
+<<<<<<< HEAD
                         <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
+=======
+<<<<<<< HEAD
+                        <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
+=======
+                   <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
+>>>>>>> master
+>>>>>>> bibiano
                    </a>
                 </div>               
             </div>
