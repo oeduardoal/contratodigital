@@ -24,24 +24,7 @@
                    <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
                    </a>
                 </div>
-<<<<<<< HEAD
-                <div class="col-sm-6 menu-main text-left" href="{{ url('/') }}">
-=======
-<<<<<<< HEAD
-                <div class="col-sm-6 menu-main text-left" href="{{ url('/') }}">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="/a/painel/">Pendentes</a>
-                            </li>
-                            <li>
-                                <a href="/a/painel/concluidos">Concluidos</a>
-                            </li>
-                             <li>
-                                <a href="/a/painel/cancelados">Cancelados</a>
-=======
                 <div class="col-sm-7 menu-main text-left" href="{{ url('/') }}">
->>>>>>> bibiano
                     <nav>
                         <ul>
                             <li>
@@ -51,64 +34,15 @@
                                 <a href="/a/painel/concluidos">Concluidos</a>
                             </li>
                              <li>
-<<<<<<< HEAD
-                                <a href="/a/painel/cancelados">Cancelados</a>
-=======
                                 <a href="#">Contratos</a>
->>>>>>> master
->>>>>>> bibiano
                             </li>
                         </ul>
                     </nav>
                 </div>
-<<<<<<< HEAD
-                <div class="col-sm-4 .navbar-brand">
-=======
-<<<<<<< HEAD
-                <div class="col-sm-4 .navbar-brand">
+                <div class="col-sm-4 navbar-brand">
                     <div class="btn-group" role="group" aria-label="...">
                          <a href="/contrato/novo" class="btn btn-verde">
                             NOVO CONTRATO
-                        </a>
-                        <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             {{Auth::user()->name}}
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                {{ csrf_field() }}
-                            </form>
-                              <li><a href="#">Dropdown link</a></li>
-                              <li>
-                                <a href="{{ url('/logout') }}" class="text-danger" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><b>Logout</b></a>
-                              </li>
-                            </ul>
-                          </div>
-=======
-                <div class="col-sm-3 .navbar-brand">
->>>>>>> bibiano
-                    <div class="btn-group" role="group" aria-label="...">
-                         <a href="/contrato/novo" class="btn btn-verde">
-                            NOVO CONTRATO
-<<<<<<< HEAD
-                        </a>
-                        <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             {{Auth::user()->name}}
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                {{ csrf_field() }}
-                            </form>
-                              <li><a href="#">Dropdown link</a></li>
-                              <li>
-                                <a href="{{ url('/logout') }}" class="text-danger" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><b>Logout</b></a>
-                              </li>
-                            </ul>
-                          </div>
-=======
                         </a >
 
                       <div class="btn-group" role="group">
@@ -125,8 +59,6 @@
                           </li>
                         </ul>
                       </div>
->>>>>>> master
->>>>>>> bibiano
                     </div>
                 </div>        
             </div>

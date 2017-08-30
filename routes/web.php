@@ -20,7 +20,6 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index');
 
-
 // API
 Route::get('api/v1/clientes', 'ApiController@clientes');
 
@@ -30,8 +29,6 @@ Route::get('/contrato', function(){
 });
 
 Route::post('/contrato/novo', 'NovoContratoController@save');
-
-Route::get('api/v1/clientes', 'ApiController@clientes');
 
 // Contrato
 Route::get('/contrato', function(){return redirect('/contrato/novo');});

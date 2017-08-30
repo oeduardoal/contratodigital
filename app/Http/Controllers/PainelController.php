@@ -15,7 +15,7 @@ class PainelController extends Controller
     }
 
     public function index(){
-    	$clientes = Cliente::where('status', 0)->get();
+    	// $clientes = Cliente::where('status', 0)->get();
 
     	return view('painel.index', compact('clientes'));
     }
