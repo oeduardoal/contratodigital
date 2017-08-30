@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index');
 
-<<<<<<< HEAD
+
 // API
 Route::get('api/v1/clientes', 'ApiController@clientes');
 
@@ -30,24 +30,12 @@ Route::get('/contrato', function(){
 });
 
 Route::post('/contrato/novo', 'NovoContratoController@save');
-=======
-<<<<<<< HEAD
-// API
-Route::get('api/v1/clientes', 'ApiController@clientes');
 
-// Contrato
-Route::get('/contrato', function(){
-	return redirect('/contrato/novo');
-});
-
-Route::post('/contrato/novo', 'NovoContratoController@save');
-=======
 Route::get('api/v1/clientes', 'ApiController@clientes');
 
 // Contrato
 Route::get('/contrato', function(){return redirect('/contrato/novo');});
->>>>>>> master
->>>>>>> bibiano
+
 Route::get('/contrato/novo', 'NovoContratoController@index');
 Route::get('/contrato/enviado', 'NovoContratoController@enviado');
 
