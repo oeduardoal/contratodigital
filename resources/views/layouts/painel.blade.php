@@ -28,6 +28,7 @@
                     <nav>
                         <ul>
                             <li>
+<<<<<<< HEAD
                                 <a href="/a/painel/">Pendentes</a>
                             </li>
                             <li>
@@ -42,6 +43,22 @@
                 <div class="col-sm-4 navbar-brand">
                     <div class="btn-group" role="group" aria-label="...">
                          <a href="/contrato/novo" class="btn btn-verde">
+=======
+                                <a href="#">Contratos</a>
+                            </li>
+                            <li>
+                                <a href="#">Contratos</a>
+                            </li>
+                             <li>
+                                <a href="#">Contratos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-3 .navbar-brand">
+                    <div class="btn-group" role="group" aria-label="...">
+                         <a href="#" class="btn btn-verde">
+>>>>>>> master
                             NOVO CONTRATO
                         </a >
 

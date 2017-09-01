@@ -30,6 +30,7 @@
                 <div class="col-sm-12 navbar-brand text-center" href="{{ url('/') }}">
                    <a href="{{ url('/contrato') }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
 =======
 <<<<<<< HEAD
@@ -38,6 +39,9 @@
                    <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
 >>>>>>> master
 >>>>>>> bibiano
+=======
+                   <img src="../img/logo.png" alt="Website Fortaleza" class="logo-website">
+>>>>>>> master
                    </a>
                 </div>               
             </div>
