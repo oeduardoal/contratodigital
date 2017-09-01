@@ -20,42 +20,6 @@
 						<th width="100"></th>
 					</tr>
 					@php
-<<<<<<< HEAD
-						foreach ($clientes as $cliente):
-					@endphp
-						<tr>
-							<td>{{ $cliente->inputRazaoSocial }}</td>
-							<td>{{ $cliente->inputNome }}</td>
-							<td>{{ $cliente->created_at }}</td>
-							<td>
-								<div class="btn-group" role="group">
-									<button type="button" class="span-more dropdown-toggle" data-toggle="dropdown" 
-									aria-haspopup="true" aria-expanded="false"> 
-										Mais <span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="#">Dropdown link</a>
-										</li>
-										<li role="separator" class="divider"></li>
-										<li class="text-success">
-											<a href="/a/painel/adicionarServicos/{{ $cliente->id }}" class="text-danger">
-												<b>Adicionar Serviços</b>
-											</a>
-										</li>
-										<li class="text-danger">
-											<a href="/a/painel/cancelarContrato/{{ $cliente->id }}" class="text-danger">
-												<b>Cancelar Contrato</b>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</td>
-						</tr>
-					@php
-						endforeach;
-					@endphp
-=======
 						for($a = 0; $a < 3; $a++):
 
 					@endphp
@@ -76,7 +40,6 @@
 				@php
 					endfor;
 				@endphp
->>>>>>> master
 				</table>
 	        </div>
 	    </div>

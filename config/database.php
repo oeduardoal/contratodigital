@@ -53,10 +53,11 @@ return [
         ],
 
         'mysql' => [
+            'host' => 'localhost',
             'driver' => 'mysql',
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', 'wpa123psk'),
+            'database' => 'laravel',
+            'username' => 'root',
+            'password' => 'wpa123psk',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
