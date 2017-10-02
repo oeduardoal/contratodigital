@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Fonts
+
+
+body{
+    background-image: url("/img/bg.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+body.painelcontratodigital{
+    background-image: none;
+    background-color: #FFF;
+    .navbar{
+        padding-top: 2rem;
+    }
+}
+
+.navbar{
+    border-bottom: none;
+    min-height: 75px;
+}
+.stepwizard-step p {
+    margin-top: 10px;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 50%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.btn{
+    border: none;
+    box-shadow: none;
+    font-weight: 600;
+    color: #FFF;
+    &:hover{
+        color: #FFF;
+    }
+}
+.send-all{
+    padding: .5rem 2.5rem;
+}
+.btn.btn-clean{
+    background-color: transparent;
+    border-color: #ccc;
+    color: #000;
+    &:hover{
+        background-color: #ccc;
+    }
+    &.success{
+        color: $brand-success;
+        border: solid 2px $brand-success;
+        &:hover{
+            background-color: $brand-success;
+            color: #FFF;
+        }
+    }
+}
+.btn-default{
+    border-color: #ccc;
+}
+.navbar-brand{
+    padding-top: .6rem;
+}
+.logo-website{
+    width:16rem;
+}
+
+.menu-main{
+    padding-top: .7rem;
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 1rem;
+                a{
+                    font-size: 18px;
+                    color: #8A8D8F;
+                    font-weight: 600;
+                }
+                a:hover,a:focus,a:active{
+                    color: #126EA1;
+                    text-decoration: none;
+                    border-bottom: solid 3px #126EA1;
+                }
+            }
+        }
+    }
+}
+.menu{
+    padding-top: 1.1rem;
+}
+.contratos{
+    .header{
+        margin-top: 4rem;
+    }
+    .content{
+        margin-top: 2rem;
+        th{
+            color: #156A9E;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        table{
+            .btn-group,.dropdown-toggle{
+                cursor: pointer;
+                box-shadow: none;
+                border: none;
+                background-color: transparent;
+                color: #156A9E;
+                font-weight: 600;          
+            }
+            .dropdown-menu{
+                left: -100px;
+                text-align: center;
+            }
+            li.text-danger{
+                 a{
+                    color: $brand-danger;
+                    }
+            }
+        }
+    }
+    margin-top: 5rem;
+    h2{
+        font-weight: 500;
+        margin-top: 2px;
+        color: #676767;
+    }
+}
